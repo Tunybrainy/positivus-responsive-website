@@ -51,7 +51,9 @@ pnpm dev
 ## Preview
 
 ✨ A glimpse of simplicity and beauty in design — built for speed and responsiveness.
-![Preview Screenshot](./assets/preview.png)
+
+![Homepage Preview](src/assets/preview.png)
+
 
 
 
