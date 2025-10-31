@@ -10,10 +10,10 @@
 It was crafted using **React + Vite**, powered by **Tailwind CSS** for styling and **pnpm** for an optimized development workflow.
 
 This project focuses on:
-- Clean and maintainable component architecture  
-- Full responsiveness across devices  
-- Beautiful UI powered by Tailwind utility classes  
-- Developer-friendly setup with hot module replacement (HMR)  
+- 🌿 Clean and maintainable component architecture  
+- ⚡ Full responsiveness across devices  
+- ♻️ Beautiful UI powered by Tailwind utility classes  
+- 💼 Developer-friendly setup with hot module replacement (HMR)  
 
 ---
 
@@ -26,7 +26,7 @@ This project focuses on:
 | **Styling** | [Tailwind CSS](https://tailwindcss.com/) |
 | **Package Manager** | [pnpm](https://pnpm.io/) |
 | **Linting** | [ESLint](https://eslint.org/) |
-| **Icons & UI Enhancements** | Lucide React / shadcn UI *(optional)* |
+| **Icons & UI Enhancements** | Lucide React / shadcn UI |
 
 ---
 
@@ -46,3 +46,12 @@ pnpm install
 
 # Start the development server
 pnpm dev
+````
+
+## Preview
+
+✨ A glimpse of simplicity and beauty in design — built for speed and responsiveness.
+![Preview Screenshot](./assets/preview.png)
+
+
+
