@@ -186,7 +186,7 @@ function CallToAction() {
     </section>
   );
 }
-function WorkProcess() {
+function CaseStudies() {
   const steps = [
     { title: "Discover", desc: "We learn your business and goals." },
     { title: "Strategize", desc: "Data-driven plan tailored for you." },
@@ -195,7 +195,22 @@ function WorkProcess() {
 
   return (
     <section className="w-full mt-10 py-12 px-6">
-      <h2 className="text-3xl font-bold text-center mb-8">Our Process</h2>
+       <div className="flex flex-row max-lg:flex-col max-lg:text-center max-lg:items-center 
+      max-lg:justify-center ">
+        <div className="flex ">
+           <h2 className=" flex text-3xl font-bold text-start max-md:text-center bg-brand-green mb-8">Case Studies</h2>
+       
+        </div>
+        <div>
+            <p className=" ml-10 max-lg:mx-0 mt-1.5 max-xl:mt-0 max-lg:mb-10">
+              Explore Real-Life Examples of Our Proven Digital Marketing Success through Our Case Studies
+           </p>
+
+        </div>
+       
+      </div>
+      
+
       <div className="flex max-md:flex-col items-start justify-center gap-6 max-w-4xl mx-auto">
         {steps.map((s, i) => (
           <div key={s.title} className="flex-1 p-6 border rounded-lg text-center">
@@ -216,7 +231,7 @@ function Home() {
       <Logo />
       <Services />
        <CallToAction />
-      <WorkProcess />
+      <CaseStudies />
      
     </main>
   );
