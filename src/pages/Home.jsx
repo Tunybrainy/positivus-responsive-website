@@ -13,9 +13,11 @@ import ctaImg from "../assets/CTA1.png";
 import emailImg from "../assets/em.png";
 import contentImg from "../assets/cc.png";
 import analyticsImg from "../assets/analytics.png"; 
+import WorkProces from "../components/WorkProcess.jsx";
 
 
 import { ArrowRight } from "lucide-react";
+import WorkProcess from "../components/WorkProcess.jsx";
 
 
 
@@ -274,6 +276,7 @@ function Home() {
       <Services />
        <CallToAction />
       <CaseStudies />
+      <WorkProcess />
      
     </main>
   );
