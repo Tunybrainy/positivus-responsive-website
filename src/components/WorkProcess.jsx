@@ -15,7 +15,7 @@ function FaqItem({ faq, defaultOpen = false }) {
           "flex cursor-pointer items-center justify-between gap-4 rounded-t-lg px-4 py-3 font-medium transition-colors duration-200 " +
           (open
             ? "bg-brand-green text-brand-black" // when open
-            : "bg-gray-200 text-gray-900 hover:bg-gray-50") // when closed
+            : "bg-gray-200 text-gray-900  hover:bg-gray-400 ") // when closed
         }
       >
         <span className="flex items-center text-wrap md:gap-6">
@@ -52,40 +52,45 @@ function FaqItem({ faq, defaultOpen = false }) {
             : "bg-gray-50 text-gray-900")
         }
       >
-        <p className="text-gray-700">{faq.desc}</p>
+        <p className="text-gray-700 text-justify ">{faq.desc}</p>
       </div>
     </details>
   );
 }
 
 function FAQ() {
-  const faqs = [
-    {
-      number: "02",
-      title: "Research and Strategy Development",
-      desc: "We analyze your goals, study your audience, and craft the right strategy.",
-    },
-    {
-      number: "03",
-      title: "Implementation",
-      desc: "We execute the plan with precision and creativity.",
-    },
-    {
-      number: "04",
-      title: "Monitoring and Optimization",
-      desc: "We track progress, collect data, and optimize performance.",
-    },
-    {
-      number: "05",
-      title: "Reporting and Communication",
-      desc: "We provide clear updates and reports to keep you informed.",
-    },
-    {
-      number: "06",
-      title: "Continual Improvement",
-      desc: "We refine strategies to ensure long-term success and growth.",
-    },
-  ];
+ const faqs = [
+  {
+    number: "01",
+    title: "Consultation",
+    desc: "We begin by understanding your vision in detail — discussing your goals, challenges, and target audience. This stage helps us align our expertise with your expectations and set a solid foundation for success.",
+  },
+  {
+    number: "02",
+    title: "Research and Strategy Development",
+    desc: "We dive deep into market trends, competitor insights, and audience behavior. Based on this research, we develop a clear strategy that balances creativity with data-driven decision-making to give your brand an edge.",
+  },
+  {
+    number: "03",
+    title: "Implementation",
+    desc: "Our team brings the plan to life through precise execution. Whether it’s building your digital presence, creating campaigns, or developing assets, we ensure every step reflects your brand’s personality and goals.",
+  },
+  {
+    number: "04",
+    title: "Monitoring and Optimization",
+    desc: "Once the plan is in motion, we closely monitor results using real-time analytics. We identify what’s working, refine what’s not, and make continuous adjustments to maximize impact and efficiency.",
+  },
+  {
+    number: "05",
+    title: "Reporting and Communication",
+    desc: "Transparency is key — that’s why we provide clear, structured reports and maintain open communication at every stage. You’ll always know what’s happening, what’s improving, and what’s next.",
+  },
+  {
+    number: "06",
+    title: "Continual Improvement",
+    desc: "Our process doesn’t end at delivery. We review long-term performance, gather feedback, and refine strategies to ensure your brand keeps evolving and achieving sustainable growth.",
+  },
+];
 
   return (
     <div className="space-y-2">
