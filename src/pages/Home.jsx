@@ -18,7 +18,8 @@ import WorkProcess from "../components/WorkProcess.jsx";
 import { ArrowRight } from "lucide-react";
 import Team from "../components/Teams.jsx";
 import Testimonial from "../components/Testimonials.jsx";
-
+import ContactUs from "../components/Contact.jsx";
+import Footer from "../components/Footer.jsx";
 
 
 
@@ -269,6 +270,8 @@ function Home() {
       <WorkProcess />
       <Team />
       <Testimonial />
+      <ContactUs />
+      <Footer/>
       
      
     </main>
