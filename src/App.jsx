@@ -22,8 +22,8 @@ function App() {
 
   return (
     <Router>
-      <div className="container mx-auto ">
-        <Navbar />
+      <div className="container mt-5 mx-auto ">
+        <Navbar  />
 
         <Routes>
           <Route path="/" element={<Home />} />

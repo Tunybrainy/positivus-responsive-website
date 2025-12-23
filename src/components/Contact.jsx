@@ -21,8 +21,8 @@ function ContactUs() {
       </div>
 
       {/* Contact Form Wrapper */}
-      <div data-aos="fade-up-right" className="mt-5 bg-gray-300  rounded-4xl w-full min-h-[400px] xl:min-h-[600px]">
-        <div className="max-w-7xl mx-auto  h-full flex flex-col lg:flex-row items-center justify-center px-4 sm:px-6">
+      <div data-aos="fade-up-right" className="mt-5 bg-gray-300  rounded-4xl w-full min-h-[550px] xl:min-h-[600px]">
+        <div className="max-w-7xl mx-auto   flex flex-col lg:flex-row items-center justify-center px-4 sm:px-6">
           
           {/* Form */}
           <form 
@@ -60,10 +60,10 @@ function ContactUs() {
               />
             </div>
 
-            <div className="md:col-span-2">
+            <div className="md:col-span-2 ">
               <button
                 type="submit"
-                className="px-6 py-3 bg-brand-dark text-white rounded-lg shadow hover:bg-brand-green transition"
+                className="px-6 py-3 bg-brand-dark max-sm:w-full text-white rounded-lg shadow hover:bg-brand-green transition"
               >
                 Send Message
               </button>

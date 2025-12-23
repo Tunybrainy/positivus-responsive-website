@@ -7,7 +7,7 @@ function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="flex h-10 m-1 max-w-full items-center p-4 bg-white text-white">
+    <div className="flex h-10 m-1  max-w-full items-center p-4 bg-white text-white">
       {/* Logo */}
      <Link to="/" className="flex items-center gap-2">
         <img
@@ -19,7 +19,7 @@ function Navbar() {
 
 
       {/* Desktop nav */}
-      <nav className="hidden lg:flex ml-auto flex-row">
+      <nav className="hidden lg:flex ml-auto  flex-row">
         <Link className="mx-5 font-bold text-brand-dark" to="/" >Home</Link>
         <Link className="mx-5 font-bold text-brand-dark" to="/about-us" >About us</Link>
         <Link className="mx-5 font-bold text-brand-dark" to="usecases" >Work with Us</Link>
@@ -46,7 +46,7 @@ function Navbar() {
 
      {/* Mobile Dropdown */}
       {isOpen && (
-        <div className="absolute top-16 left-0 mt-5 w-full bg-white text-black flex flex-col items-center space-y-4 p-4 shadow-md lg:hidden z-50">
+        <div className="absolute top-16 left-0 mt-1 w-full bg-white text-black flex flex-col items-center space-y-4 p-4 shadow-md lg:hidden z-50">
           <Link to="/" onClick={() => setIsOpen(false)}>
             Home
           </Link>

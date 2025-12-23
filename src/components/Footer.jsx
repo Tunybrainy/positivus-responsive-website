@@ -41,7 +41,8 @@ function Footer() {
               <li className="hover:text-white cursor-pointer">Pricing</li>
               <li className="hover:text-white cursor-pointer">Blog</li>
             </ul>
-            <div className="mt-10 bg-white/5 w-[600px] rounded-xl p-4 flex flex-col sm:flex-row gap-3">
+            <div className="mt-10 bg-white/5 xl:w-[600px] w-[250x]
+             rounded-xl p-4 flex flex-col sm:flex-row gap-3">
               <input
                 type="email"
                 placeholder="Email"
