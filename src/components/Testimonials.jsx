@@ -83,12 +83,12 @@ function Testimonial() {
             >
               {/* Card */}
               <div
-                className="relative w-full p-6 rounded-lg border border-green-600
+                className="relative w-full p-6 rounded-lg border border-[#B9ff66]
                 bg-brand-dark text-white transition-all duration-300 hover:scale-105 flex flex-col justify-between"
               >
                 <p className="text-white text-sm">{T.Testimonies}</p>
                 <div className="absolute bottom-0 mt-[-5px] -translate-x-1/2 translate-y-3 w-0 h-0
-                border-l-8 border-r-8 border-t-8 border-l-transparent border-r-transparent border-t-green-500" />
+                border-l-8 border-r-8 border-t-8 border-l-transparent border-r-transparent border-t-[#B9ff66]" />
               </div>
 
               {/* Author */}

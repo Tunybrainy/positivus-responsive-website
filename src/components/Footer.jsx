@@ -77,7 +77,7 @@ function Footer() {
 
         {/* Bottom Section */}
         <div className="flex flex-col sm:flex-row gap-4 justify-between text-sm text-gray-400">
-          <p>© 2025 Positivus. All Rights Reserved. © Niyi.dev</p>
+          <p>© Niyi.dev 2025 Positivus. All Rights Reserved.</p>
           <p className="hover:text-white cursor-pointer">Privacy Policy</p>
         </div>
 
