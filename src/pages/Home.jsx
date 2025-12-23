@@ -13,11 +13,11 @@ import ctaImg from "../assets/CTA1.png";
 import emailImg from "../assets/em.png";
 import contentImg from "../assets/cc.png";
 import analyticsImg from "../assets/analytics.png"; 
-import WorkProces from "../components/WorkProcess.jsx";
-
+import WorkProcess from "../components/WorkProcess.jsx";
 
 import { ArrowRight } from "lucide-react";
-import WorkProcess from "../components/WorkProcess.jsx";
+import Team from "../components/Teams.jsx";
+import Testimonial from "../components/Testimonials.jsx";
 
 
 
@@ -25,7 +25,7 @@ import WorkProcess from "../components/WorkProcess.jsx";
 function Banner() {
   return (
     <section className="flex flex-row max-lg:flex-col items-center justify-between p-8">
-      <div className="flex-1 flex flex-col items-start text-left">
+      <div data-aos="fade-up-right"className="flex-1 flex flex-col items-start text-left">
         <h1 className="text-[70px] max-sm:text-5xl font-bold my-5">
           Navigating the <br className="max-sm:hidden" /> digital landscape <br className="max-sm:hidden" /> for success
         </h1>
@@ -40,7 +40,7 @@ function Banner() {
         </div>
       </div>
 
-      <div className="flex-1 flex justify-end max-lg:justify-center mt-4">
+      <div data-aos="fade-up-left" className="flex-1 flex justify-end max-lg:justify-center mt-4">
         <img src={bannerIllustration} alt="banner" className="max-w-[520px] w-full h-auto max-sm:w-[260px]" />
       </div>
     </section>
@@ -116,7 +116,7 @@ const bgColors = [
 
 
   return (
-    <section className="w-full py-12 px-6">
+    <section data-aos="fade-down-left" className="w-full py-12 px-6">
       <div className="flex flex-row max-lg:flex-col max-lg:text-center max-lg:items-center 
       max-lg:justify-center ">
         <div className="flex ">
@@ -133,10 +133,10 @@ const bgColors = [
        
       </div>
       
-      <div className="grid max-md:grid-cols-1 grid-cols-2 max-lg:grid-cols-2  gap-6 ">
+      <div  className="grid max-md:grid-cols-1 grid-cols-2 max-lg:grid-cols-2   gap-6 ">
         {services.map((s, i) => (
 
-          <div key={s.title} className={`p-6 rounded-[30px] border border-b-4 border-b-black max-w-[600px] shadow-sm flex flex-col justify-between ${bgColors[i % bgColors.length]}`}>
+          <div data-aos="fade-right" key={s.title} className={`p-6 rounded-[30px] border border-b-4 hover:scale-105 border-b-black max-w-[600px] shadow-sm flex flex-col justify-between ${bgColors[i % bgColors.length]}`}>
             <div className={` flex w-fit max-lg:w-fit  ${s.title_bg_color}`}>
              
               <h3 className="flex font-semibold max-lg:text-3xl max-md:text-2xl text-wrap text-3xl  mb-2 text-brand-dark
@@ -167,12 +167,10 @@ const bgColors = [
   );
 }
 
-
-
 function CallToAction() {
   return (
-    <section className="relative w-full max-sm:w-[90%] max-sm:mx-auto max-sm:h-[300px]  h-[250px] mb-10 rounded-3xl  flex  flex-row py-12 px-6 bg-brand-light">
-      <div className=" max-w-3xl h-[100px] mx-auto  text-left">
+    <section data-aos="fade-up-left" className="relative w-full max-sm:w-[90%] max-sm:mx-auto max-sm:h-[300px]  h-[250px] mb-10 rounded-3xl  flex  flex-row py-12 px-6 bg-brand-light">
+      <div  className=" max-w-3xl h-[100px] mx-auto  text-left">
         <h3 className="text-2xl font-bold mb-4">Let’s make things happen </h3>
         <p className="text-gray-600 mb-6">Contact us today to learn more about how our digital marketing 
           services can help your business grow and succeed online.</p>
@@ -188,9 +186,6 @@ function CallToAction() {
     </section>
   );
 }
-
-
-
 
 function CaseStudies() {
   const steps = [
@@ -211,7 +206,7 @@ function CaseStudies() {
   return (
     <section className="w-full mt-10 py-12 px-6">
       {/* Header */}
-      <div className="flex flex-row max-lg:flex-col max-lg:text-center max-lg:items-center max-lg:justify-center">
+      <div data-aos="fade-up-left" className="flex flex-row max-lg:flex-col max-lg:text-center max-lg:items-center max-lg:justify-center">
         <div className="flex">
           <h2 className="flex text-3xl font-bold text-start max-md:text-center bg-brand-green mb-8">
             Case Studies
@@ -226,7 +221,7 @@ function CaseStudies() {
       </div>
 
       {/* Cards Container */}
-      <div
+      <div data-aos="fade-up-right"
         className="
           md:bg-brand-dark mt-10 rounded-lg 
           flex gap-6 max-w-6xl mx-auto
@@ -241,7 +236,7 @@ function CaseStudies() {
               flex-shrink-0 w-[80%] sm:w-[300px] md:w-auto
               md:flex-1 p-6 rounded-lg bg-brand-dark text-white
               border hover:border-brand-green
-              transition-all duration-300 snap-start
+              transition-all duration-300 snap-start hover:scale-105
             "
           >
             <p className="text-white text-sm mb-5">{s.desc}</p>
@@ -263,11 +258,6 @@ function CaseStudies() {
 
 
 
-
-
-
-
-
 function Home() {
   return (
     <main className="container mx-auto">
@@ -277,6 +267,9 @@ function Home() {
        <CallToAction />
       <CaseStudies />
       <WorkProcess />
+      <Team />
+      <Testimonial />
+      
      
     </main>
   );

@@ -93,7 +93,7 @@ function FAQ() {
 ];
 
   return (
-    <div className="space-y-2">
+    <div data-aos="fade-up-right"className="space-y-2">
       {faqs.map((faq, i) => (
         <FaqItem key={i} faq={faq} />
       ))}
@@ -103,9 +103,9 @@ function FAQ() {
 
  function WorkProcess() {
   return (
-    <section className="w-full mt-10 py-12 px-6">
+    <section className="w-full mt-5 py-12 px-6">
       {/* Header */}
-      <div className="flex flex-row max-lg:flex-col max-lg:items-center max-lg:justify-center max-lg:text-center">
+      <div data-aos="fade-up-left" className="flex mb-5 flex-row max-lg:flex-col max-lg:items-center max-lg:justify-center max-lg:text-center">
         <div>
           <h2 className="mb-8 bg-brand-green text-3xl font-bold text-start max-md:text-center">
             Our Working Process

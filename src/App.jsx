@@ -1,18 +1,30 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Usecases from './pages/Usecases';
-import Pricing from './pages/Pricing';
-import Service from './pages/Service';
-import AboutUs from './pages/AboutUs';
-import Blog from './pages/Blog';
-import Home from './pages/Home';
-import Navbar from './components/Navbar';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+import Navbar from "./components/Navbar";
+import Home from "./pages/Home";
+import Usecases from "./pages/Usecases";
+import Pricing from "./pages/Pricing";
+import Service from "./pages/Service";
+import AboutUs from "./pages/AboutUs";
+import Blog from "./pages/Blog";
 
 function App() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+      easing: "ease-out-cubic",
+    });
+  }, []);
+
   return (
     <Router>
-         
       <div className="container mx-auto py-8">
-          <Navbar />
+        <Navbar />
+
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/usecases" element={<Usecases />} />
@@ -26,6 +38,4 @@ function App() {
   );
 }
 
-
-
-export default App
+export default App;
