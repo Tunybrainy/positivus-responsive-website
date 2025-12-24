@@ -51,7 +51,7 @@ function Testimonial() {
     <section className="w-full mt-2 py-12 px-6">
       {/* Header */}
       <div
-        data-aos="fade-up-left"
+        data-aos="fade-right"
         className="flex flex-row max-lg:flex-col max-lg:items-center 
         max-lg:justify-center max-lg:text-center"
       >
@@ -69,7 +69,9 @@ function Testimonial() {
       </div>
 
       {/* Carousel Wrapper (HIDES overflow) */}
-      <div className="mt-5 bg-brand-dark rounded-4xl w-full h-[500px] flex flex-col items-center justify-center overflow-hidden">
+      <div
+      data-aos="fade-right"
+       className="mt-5 bg-brand-dark rounded-4xl w-full h-[500px] flex flex-col items-center justify-center overflow-hidden">
         
         {/* Carousel (SCROLLS) */}
         <div

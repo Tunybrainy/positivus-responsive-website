@@ -58,8 +58,8 @@ function Footer() {
           
 
            {/* social icons*/}
-          <div className="flex-1 align-center">
-             <ul className="flex flex-col sm:flex-row flex-wrap gap-4 sm:gap-6 text-sm text-gray-300">
+          <div className="flex-1 max-sm:justify-center align-center">
+             <ul className="flex max-sm:justify-center flex-row sm:flex-row flex-wrap gap-4 sm:gap-6 text-sm text-gray-300">
                 <a href=""> <li className="hover:text-white cursor-pointer"><img src={footer_icon2} alt="facebook" /></li></a>  
                 <a href=""> <li className="hover:text-white cursor-pointer"><img src={footer_icon3} alt="linkedin" /></li></a>
                  <a href=""> <li className="hover:text-white cursor-pointer"><img src={footer_icon1} alt="twitter" /></li></a>

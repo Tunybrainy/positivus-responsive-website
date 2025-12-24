@@ -1,11 +1,11 @@
-import Illustration from "../assets/illustration.png";
+import Illustration from "../../assets/illustration.png";
 
 function ContactUs() {
   return (
     <section className="w-full mt-10 py-12 px-4 sm:px-6 ">
       {/* Header */}
       <div
-        data-aos="fade-up-left"
+        data-aos="fade-right"
         className="max-w-7xl mx-auto flex flex-row max-lg:flex-col max-lg:text-center max-lg:items-center max-lg:justify-center"
       >
         <div>
@@ -21,7 +21,8 @@ function ContactUs() {
       </div>
 
       {/* Contact Form Wrapper */}
-      <div data-aos="fade-up-right" className="mt-5 bg-gray-300  rounded-4xl w-full min-h-[550px] xl:min-h-[600px]">
+      <div  data-aos="fade-up"
+      className="mt-5 bg-gray-300  rounded-4xl w-full min-h-[550px] xl:min-h-[600px]">
         <div className="max-w-7xl mx-auto   flex flex-col lg:flex-row items-center justify-center px-4 sm:px-6">
           
           {/* Form */}

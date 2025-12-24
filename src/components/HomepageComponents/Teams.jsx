@@ -1,11 +1,11 @@
-import team_img1 from "../assets/team_img1.png";
-import team_img2 from "../assets/team_img2.png";
-import team_img3 from "../assets/team_img3.png"; 
-import team_img4 from "../assets/team_img4.png";
-import team_img5 from "../assets/team_img5.png";
-import team_img6 from "../assets/team_img6.png";   
-import team_icon from "../assets/team_icon.png";
-import Button from "./Button";
+import team_img1 from "../../assets/team_img1.png";
+import team_img2 from "../../assets/team_img2.png";
+import team_img3 from "../../assets/team_img3.png"; 
+import team_img4 from "../../assets/team_img4.png";
+import team_img5 from "../../assets/team_img5.png";
+import team_img6 from "../../assets/team_img6.png";   
+import team_icon from "../../assets/team_icon.png";
+import Button from "../Button";
 
 
 function TeamCards () {
@@ -53,9 +53,9 @@ function TeamCards () {
 
   return (
     
-    <div className="grid gap-6 lg:gap-8 grid-cols-3 max-lg:grid-cols-2 max-sm:grid-cols-1">
+    <div data-aos="fade-right" className="grid gap-6 lg:gap-8 grid-cols-3 max-lg:grid-cols-2 max-sm:grid-cols-1">
       {teamcardsItems.map((t, i) => (
-        <div data-aos="fade-up-right" key={i} className=" hover:scale-105 relative p-4 border rounded-[20px] shadow-md hover:shadow-lg transition-shadow duration-300">
+        <div  key={i} className=" hover:scale-105 relative p-4 border rounded-[20px] shadow-md hover:shadow-lg transition-shadow duration-300">
           <div className="flex items-center mb-4">
         <img
         className="w-20 h-20 object-contain"
@@ -93,7 +93,7 @@ function TeamCards () {
    return (  
     <section className="w-full mt-5 py-12 px-6 ">
       {/* Header */}
-      <div data-aos="fade-up-left" className="flex mb-5 flex-row max-lg:flex-col max-lg:items-center 
+      <div data-aos="fade-right" className="flex mb-5 flex-row max-lg:flex-col max-lg:items-center 
        max-lg:justify-center max-lg:text-center">
         <div>
           <h2 className="mb-8 bg-brand-green text-3xl font-bold text-start max-md:text-center">
@@ -107,7 +107,7 @@ function TeamCards () {
         </div>
       </div>
       <TeamCards/>
-        <div data-aos="fade-up-left" className=" mt-10 flex lg:justify-end justify-center">
+        <div  className=" mt-10 flex lg:justify-end justify-center">
         <Button className=""
         text="Join Our Team" 
         href="/careers" />

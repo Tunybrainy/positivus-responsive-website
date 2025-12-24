@@ -69,7 +69,19 @@
 
 @layer base {
 
+  html {
+  overflow-x: hidden;
+   }
 
+  /* Prevent layout shifts while AOS initializes by briefly locking scroll
+     and stabilizing viewport height. The class is toggled on <body> in
+     App.jsx only during AOS initialization and removed immediately after. */
+  body.aos-loading {
+    overflow: hidden !important;
+    height: 100vh !important;
+  }
+
+ 
   h1, h2, h3, h4, h5, h6 {
 
     font-family: "Space Grotesk", sans-serif;

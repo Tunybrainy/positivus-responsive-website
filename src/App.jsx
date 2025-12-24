@@ -13,11 +13,43 @@ import Blog from "./pages/Blog";
 
 function App() {
   useEffect(() => {
-    AOS.init({
-      duration: 1000,
-      once: true,
-      easing: "ease-out-cubic",
-    });
+    // Initialize AOS after the full page load to avoid AOS applying
+    // initial transform/opacity before images/fonts are measured which
+    // can cause a temporary layout shift (extra space) while animations
+    // are being prepared.
+    const initAOS = () => {
+      // prevent page from scrolling or shifting while AOS calculates
+      // element positions (temporary class added to body)
+      if (typeof document !== "undefined" && document.body) {
+        document.body.classList.add("aos-loading");
+      }
+
+      AOS.init({
+        duration: 1000,
+        once: true,
+        easing: "ease-out-cubic",
+      });
+      // ensure AOS measurements are up to date
+      AOS.refresh();
+      // remove the temporary lock shortly after AOS has refreshed
+      // use requestAnimationFrame to let browser apply styles
+      requestAnimationFrame(() => {
+        setTimeout(() => {
+          if (typeof document !== "undefined" && document.body) {
+            document.body.classList.remove("aos-loading");
+          }
+        }, 60);
+      });
+    };
+
+    if (document.readyState === "complete") {
+      // page already loaded
+      initAOS();
+    } else {
+      // wait for load (images/fonts) to avoid reflow/shift from AOS styles
+      window.addEventListener("load", initAOS, { once: true });
+      return () => window.removeEventListener("load", initAOS);
+    }
   }, []);
 
   return (
